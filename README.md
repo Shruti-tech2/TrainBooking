@@ -1,5 +1,6 @@
 # SeatBooking
 
+[click here](http://train-booking-app.great-site.net/) to visit the site.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ## Development server
