@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <div class="mainclass ml20 mt10 mr20">
+      <mat-card>
+        <mat-card-title>Train booking</mat-card-title>
+        <mat-card-content >
+          <div class="bootstrap-wrapper">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-7">
+                  <table >
+                    <tr *ngFor="let row of matrixData">
+                      <td *ngFor="let cell of row" [style.background-color]="cell===-1?'red':cell===1?'lightgreen':'lightblue'"></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-5">
+                  <form (ngSubmit)="Book()">
+                    <div class="row">
+                        <label class="fm" for="seats">Select numbers of seats to book: </label>
+    
+                        <input  class="fm ml20 myInput" mat-input required name="seats" [(ngModel)]="seats" type="number" min="1" max="7" id="seats" />
+                        <mat-hint align="start"><strong>At time only 7 seats can be booked!</strong></mat-hint>                
+                      </div>
+                      <div class="row">
+                        <button mat-raised-button color="accent" type="submit">Book</button>
+                      </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </mat-card-content>
+    </mat-card>
+    </div>
+    </body>
+</html>

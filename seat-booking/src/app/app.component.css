@@ -1,0 +1,12 @@
+table{
+  
+  width: 50%;
+  height: 20%;
+  border-collapse:separate;
+}
+
+td{
+  padding: 10px;
+  border: 2px solid rgb(95, 95, 185);
+  border-radius: 20%;
+}
