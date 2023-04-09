@@ -1,28 +1,19 @@
 # SeatBooking
-
 [click here](http://train-booking-app.great-site.net/) to visit the site.
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
-## Development server
+## Snapshot:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![Screenshot (1)](https://user-images.githubusercontent.com/83580518/230786562-febd9325-37ae-43e0-85ef-375930011981.png)
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Description:
+1. There are 80 seats in a coach of a train with only 7 seats in a row and last row of only 3 seats. For
+simplicity, there is only one coach in this train.
+2. One person can reserve up to 7 seats at a time.
+3. If person is reserving seats, the priority will be to book them in one row.
+4. If seats are not available in one row then the booking should be done in such a way that the nearby
+seats are booked.
+5. User can book as many tickets as s/he wants until the coach is full. 6. You don’t have to create login
+functionality for this application.
+6. Input required will only be the required number of seats. Example: 2 or 4 or 6 or 1 etc.
+7. Output should be seats numbers that have been booked for the user along with the display of all the
+seats and their availability status through color or number or anything else that you may feel fit.
